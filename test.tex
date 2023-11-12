@@ -40,7 +40,7 @@ Good luck and Happy reading work!
 
 \begin{center}
 \textbf{Distribution of Marks}\\
-\medskip
+
 \gradetable[v][questions]
 \end{center}
 
@@ -50,10 +50,36 @@ Good luck and Happy reading work!
 A contractor is required by a county planning department to submit one, two, three, four, or five forms (depending on the nature of the project) in applying for a building permit. Let $Y=$ the number of forms required of the next applicant. The probability that $y$ forms are required is known to be proportional to $y$---that is, $p(y)=ky\ \text{for}\ y=1,\dots,5.$
 
 \begin{parts}
-\part[2] What is the value of $k$? (\textit{Hint}: $\sum_{y=1}^5p(y)=1$)
-\part[2] What is the probability that at most three forms are required?
-\part[2] What is the probability that between two and four forms (inclusive)are required?
-\part[2] Could $p(y)=y^2/50\ \text{for}\ y=1,\dots,5$ be the \textit{pmf} of $Y$. 
+    \begin{enumerate}
+        \item Answer the following questions true or false:
+        \begin{enumerate}[label=\alph*.]
+            \item An operating system can be viewed as a "resource allocator" to control various I/O devices and user programs.
+            \item The following instructions must be protected to ensure that a computer system operates correctly: change to monitor mode, read from monitor memory, write into monitor memory, and turn off timer interrupts.
+            \item I/O instructions and turning interrupts on are not generally considered to be privileged instructions.
+            \item Deadlock can be prevented in the dining philosophers problem by simply reducing the number of philosophers that are allowed to eat at the same time by one.
+            \item On a uniprocessor system, the critical section problem can be solved simply by disabling interrupts while a shared variable is being modified.
+            \item A thread is generally more lightweight than a process because threads have their own virtual address spaces while processes may have shared address spaces.
+            \item A deadlock cannot arise for a set of processes unless there is a circular wait condition.
+        \end{enumerate}
+        \item You are to implement the OS2000 timer interrupt handler \texttt{tint()} for the timer interrupt mechanism used on the x99 hardware architecture. \ldots [rest of the question as provided]
+        \begin{enumerate}[label=\alph*.]
+            \item Consider the following \texttt{tint()} implementation. \ldots [rest of the question as provided]
+            \item Explain in English a more robust method than the one used \ldots [rest of the question as provided]
+            \item You are now told that due to a new change in x99, there are high priority interrupts \ldots [rest of the question as provided]
+        \end{enumerate}
+        \item Give short answers to each of the following questions.
+        \begin{enumerate}[label=\alph*.]
+            \item What is the difference between \texttt{fork} and \texttt{clone} in Linux?
+            \item What is the difference between maskable and non-maskable interrupts?
+            \item What is the difference between a thread and a process?
+            \item What is the difference between kernel mode and user mode?
+        \end{enumerate}
+        \item Write a new Linux 5.10.138 system call \texttt{pinfo()} that takes a PID and a pointer to \texttt{struct proc\_struct} as its arguments, and populates the structure with the process state information for that process. The system call should be numbered 441. \ldots [rest of the question as provided]
+        \begin{enumerate}[label=\alph*.]
+            \item Write the C code for your system call function \ldots [rest of the question as provided]
+            \item Write a simple C program that calls your system call and prints the result. \ldots [rest of the question as provided]
+        \end{enumerate}
+    \end{enumerate}
 \end{parts}
 
 \clearpage
