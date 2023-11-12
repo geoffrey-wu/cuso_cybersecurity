@@ -1,0 +1,112 @@
+\documentclass[letterpaper,12pt,addpoints]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[top=1in, bottom=1in, left=0.75in, right=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+
+\newcommand{\university}{UNIVERSITY OF TORONTO}
+\newcommand{\faculty}{Faculty of Applied Science and Engineering}
+\newcommand{\class}{CME263H1}
+\newcommand{\examnum}{QUIZ \#3}
+\newcommand{\content}{Discrete Random Variables \& Probability Distributions}
+\newcommand{\examdate}{2018/02/15}
+\newcommand{\timelimit}{50 minutes}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\firstpagefooter{}{Page \thepage\ of \numpages}{}
+\runningheader{\class}{\examnum}{\examdate}
+\runningheadrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\begin{document}
+
+\title{\Large \textbf{\university\\ \faculty\\
+\bigskip
+\class -- \examnum \\ \content}}
+\author{Instructor: Prof. Amer Shalaby}
+\date{\examdate}
+\maketitle
+\begin{flushleft}
+\makebox[12cm]{\textbf{Name}:\ \hrulefill}
+\medskip
+\makebox[12cm]{\textbf{Student Number}:\ \hrulefill}
+\end{flushleft}
+\noindent \rule{\textwidth}{1pt}
+
+\noindent This exam contains \numpages\ pages (including this cover page) and \numquestions\ questions. Total of points is \numpoints.\\
+Good luck and Happy reading work!
+
+\begin{center}
+\textbf{Distribution of Marks}\\
+\medskip
+\gradetable[v][questions]
+\end{center}
+
+\clearpage
+\begin{questions}
+\question
+A contractor is required by a county planning department to submit one, two, three, four, or five forms (depending on the nature of the project) in applying for a building permit. Let $Y=$ the number of forms required of the next applicant. The probability that $y$ forms are required is known to be proportional to $y$---that is, $p(y)=ky\ \text{for}\ y=1,\dots,5.$
+
+\begin{parts}
+\part[2] What is the value of $k$? (\textit{Hint}: $\sum_{y=1}^5p(y)=1$)
+\part[2] What is the probability that at most three forms are required?
+\part[2] What is the probability that between two and four forms (inclusive)are required?
+\part[2] Could $p(y)=y^2/50\ \text{for}\ y=1,\dots,5$ be the \textit{pmf} of $Y$. 
+\end{parts}
+
+\clearpage
+\question
+The \textit{pmf} of the amount of memory \textit{X} (GB) in a purchased flash drive was given as
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c} 
+ $x$ & 1 & 2 & 4 & 8 & 16 \\
+ \hline
+ $p(x)$ & 0.05 & 0.10 & 0.35 & 0.40 & 0.10\\  
+\end{tabular}
+\end{center}
+Compute the following:
+\begin{parts}
+\part[2] Expected value $E(X)$
+\part[2] Variance $V(X)$ directly from the definition
+\part[2] The standard deviation $\sigma(X)$
+\part[2] $V(X)$ using the shortcut formula ($V(X)=E(X^2)-E^2(X)$)
+\end{parts}
+
+\clearpage
+\question Each of 12 refrigerators of a certain type has been returned to a distributor because of the presence of a high-pitched oscillating noise when the refrigerator is running. Suppose that 5 of these 12 have defective compressors and the other 7 have less serious problems. If they are examined in random order, let X = the number among the first 6 examined that have a defective compressor. Compute the following:
+\begin{parts}
+\part[3] $P(X=1)$
+\part[3] $P(X \geq 4)$
+\end{parts}
+
+\clearpage
+\question A reservation service employs five information operators who receive requests for information independently of one another, each according to a Poisson process with rate $\mu=2$ per minute.
+\begin{parts}
+\part[4] What is the probability that during a given 1-min period, the first operator receives no requests?
+\part[4] What is the probability that during a given 1-min period, exactly four of the five operators receive no requests?(\textit{Hint}: treat either as a binomial process of 5 trials with 4 successes or consider 5 combinations of Poisson processes, e.g. only 1st operation receives a request  or only 2nd operation receives a request and so on)
+\end{parts}
+
+\end{questions}
+\clearpage
+
+\centering \textbf{\large Probability mass/distribution functions}
+
+\flushleft \textbf{Binomial Distribution}
+$$f(x;n,p)=b(x;np)=\binom{n}{x}p^x(1-p)^{n-x}$$
+$$\mu=E(x)=np$$
+$$\sigma^2_x=np(1-p)$$
+
+\flushleft \textbf{Hypergeometric Distribution}
+$$P(X=x)=h(x;n,M,N)=\frac{\binom{M}{x}\binom{N-M}{n-x}}{\binom{N}{n}}$$
+$$\mu=E(X)=\frac{nM}{N}$$
+$$\sigma^2_x=n\frac{M}{N}\frac{N-M}{N}\frac{N-n}{N-1}$$
+
+\flushleft \textbf{Poisson Distribution}
+$$P(x;\mu)=e^{-\mu}\frac{\mu^x}{x!}$$
+$$E(X)=Var(X)=\mu$$
+
+\clearpage
+This page is intentionally left blank to accommodate work that wouldn't fit elsewhere and/or scratch work.
+\end{document}
