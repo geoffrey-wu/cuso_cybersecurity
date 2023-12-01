@@ -1,5 +1,60 @@
 ANSWER KEY
 
 ECC
+1. y^2 = x^3 + ax + b
+2. 7 points: (1,1) (1,4) (2,0) (3,1) (3,4) (4,0), \infty
+3. Order 7
+4. Any one of the points except for \infty
+5. (3,-3) mod 5 or any equivalent points
 
-1. 
+Diffie Hellman Exchange:
+1. True
+2. Alice coputes s = B^a \mod p and Bob computes s = A^b \mod p
+3. Exponent attacks - if secret exponents are not chosen randomly, Small subgroup attacks - if the prime number p has a small subgroup, Man-in-the-middle attacks - if they can intercept messages and impersonate alice or bob
+
+Hasing
+1. a hash collision is a random match in hash values that occurs when a hashing algorithm produces the same hash value for two distinct pieces of data
+2. Hash is one way, encryption is two way
+3. True
+4. Python uses ord() to do the conversion
+
+XOR
+1. Easy
+2. x ^= y
+y ^= x
+x ^= y
+
+Classic Ciphers
+1. False
+2. Mono
+3. Myvewlsk Cmsoxmo Yviwzskn OR Sebkcryq Isyudsu Ebocfyqt
+ 
+
+Modern Ciphers
+1. False
+2. Salt
+3. Enigma
+4. 2100 
+5. 4
+
+Web Arch:
+1. API = connections (interfaces) between two or more endpoints, such as
+programs or systems, that allow for the endpoints to communicate and share
+functionality
+2. HTTP verbs such as GET, PUT, DELETE, and POST
+3. HTTPS uses encryption (TLS or SSL), HTTP does not
+4. Success!
+5. status line, header, body
+6. Providing framework for encryption and decryption processes in HTTPs.
+
+
+Principles:
+1. Authentication
+2. Non-repudiation
+3. DDoS attack = overwhelming a server to disrupt the normal traffic
+4. Kerckhoff’s principle says that a cryptosystem should be secure even if everything about
+the system, except the key, is public knowledge
+5. Financial, legal, reputational, asset, and time consequences
+6. CIA stands for Confidentiality, Integrity, and Availability. CIA is a model that is designed to guide policies for Information Security. It is one of the most popular models used by organizations.
+7. Malware, Phishing, Password Attacks, DDoS, Man in the Middle, Drive-By, Downloads, Malvertising, Rogue Software
+8. Application, Presentation, Session, Transport, Network, DAtalink, Physical
