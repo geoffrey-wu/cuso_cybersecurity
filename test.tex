@@ -35,102 +35,35 @@
 \end{flushleft}
 \noindent \rule{\textwidth}{1pt}
 
-\noindent This exam contains \numpages\ pages (including this cover page) and \numquestions\ questions. Total of points is \numpoints.\\
+\noindent This exam contains <X> pages (including this cover page) and <X> questions. Total of points is <X>.\\
 Good luck and Happy reading work!
 
 \begin{center}
 \textbf{Distribution of Marks}\\
-
-\gradetable[v][questions]
 \end{center}
-
-\clearpage
-\begin{questions}
-\question
-A contractor is required by a county planning department to submit one, two, three, four, or five forms (depending on the nature of the project) in applying for a building permit. Let $Y=$ the number of forms required of the next applicant. The probability that $y$ forms are required is known to be proportional to $y$---that is, $p(y)=ky\ \text{for}\ y=1,\dots,5.$
-
-\begin{enumerate}
-    \item Answer the following questions true or false:
-    \begin{enumerate}
-        \item An operating system can be viewed as a "resource allocator" to control various I/O devices and user programs.
-        \item The following instructions must be protected to ensure that a computer system operates correctly: change to monitor mode, read from monitor memory, write into monitor memory, and turn off timer interrupts.
-        \item I/O instructions and turning interrupts on are not generally considered to be privileged instructions.
-        \item Deadlock can be prevented in the dining philosophers problem by simply reducing the number of philosophers that are allowed to eat at the same time by one.
-        \item On a uniprocessor system, the critical section problem can be solved simply by disabling interrupts while a shared variable is being modified.
-        \item A thread is generally more lightweight than a process because threads have their own virtual address spaces while processes may have shared address spaces.
-        \item A deadlock cannot arise for a set of processes unless there is a circular wait condition.
-    \end{enumerate}
-    \item You are to implement the OS2000 timer interrupt handler \texttt{tint()} for the timer interrupt mechanism used on the x99 hardware architecture. \ldots [rest of the question as provided]
-    \begin{enumerate}
-        \item Consider the following \texttt{tint()} implementation. \ldots [rest of the question as provided]
-        \item Explain in English a more robust method than the one used \ldots [rest of the question as provided]
-        \item You are now told that due to a new change in x99, there are high priority interrupts \ldots [rest of the question as provided]
-    \end{enumerate}
-    \item Give short answers to each of the following questions.
-    \begin{enumerate}
-        \item What is the difference between \texttt{fork} and \texttt{clone} in Linux?
-        \item What is the difference between maskable and non-maskable interrupts?
-        \item What is the difference between a thread and a process?
-        \item What is the difference between kernel mode and user mode?
-    \end{enumerate}
-    \item Write a new Linux 5.10.138 system call \texttt{pinfo()} that takes a PID and a pointer to \texttt{struct proc\_struct} as its arguments, and populates the structure with the process state information for that process. The system call should be numbered 441. \ldots [rest of the question as provided]
-    \begin{enumerate}
-        \item Write the C code for your system call function \ldots [rest of the question as provided]
-        \item Write a simple C program that calls your system call and prints the result. \ldots [rest of the question as provided]
-    \end{enumerate}
-\end{enumerate}
-
-\clearpage
-\question
-The \textit{pmf} of the amount of memory \textit{X} (GB) in a purchased flash drive was given as
 \begin{center}
-\begin{tabular}{c|c|c|c|c|c} 
- $x$ & 1 & 2 & 4 & 8 & 16 \\
- \hline
- $p(x)$ & 0.05 & 0.10 & 0.35 & 0.40 & 0.10\\  
+\begin{tabular} {| c | c | c |}
+    \hline
+    Section & Points & Score \\
+    \hline
+    1 & 65 & \\
+    \hline
+    2 & 20 & \\
+    \hline
+    3 & 15 & \\
+    \hline
 \end{tabular}
 \end{center}
-Compute the following:
-\begin{parts}
-\part[2] Expected value $E(X)$
-\part[2] Variance $V(X)$ directly from the definition
-\part[2] The standard deviation $\sigma(X)$
-\part[2] $V(X)$ using the shortcut formula ($V(X)=E(X^2)-E^2(X)$)
-\end{parts}
-
-\clearpage
-\question Each of 12 refrigerators of a certain type has been returned to a distributor because of the presence of a high-pitched oscillating noise when the refrigerator is running. Suppose that 5 of these 12 have defective compressors and the other 7 have less serious problems. If they are examined in random order, let X = the number among the first 6 examined that have a defective compressor. Compute the following:
-\begin{parts}
-\part[3] $P(X=1)$
-\part[3] $P(X \geq 4)$
-\end{parts}
-
-\clearpage
-\question A reservation service employs five information operators who receive requests for information independently of one another, each according to a Poisson process with rate $\mu=2$ per minute.
-\begin{parts}
-\part[4] What is the probability that during a given 1-min period, the first operator receives no requests?
-\part[4] What is the probability that during a given 1-min period, exactly four of the five operators receive no requests?(\textit{Hint}: treat either as a binomial process of 5 trials with 4 successes or consider 5 combinations of Poisson processes, e.g. only 1st operation receives a request  or only 2nd operation receives a request and so on)
-\end{parts}
-
-\end{questions}
 \clearpage
 
-\centering \textbf{\large Probability mass/distribution functions}
-
-\flushleft \textbf{Binomial Distribution}
-$$f(x;n,p)=b(x;np)=\binom{n}{x}p^x(1-p)^{n-x}$$
-$$\mu=E(x)=np$$
-$$\sigma^2_x=np(1-p)$$
-
-\flushleft \textbf{Hypergeometric Distribution}
-$$P(X=x)=h(x;n,M,N)=\frac{\binom{M}{x}\binom{N-M}{n-x}}{\binom{N}{n}}$$
-$$\mu=E(X)=\frac{nM}{N}$$
-$$\sigma^2_x=n\frac{M}{N}\frac{N-M}{N}\frac{N-n}{N-1}$$
-
-\flushleft \textbf{Poisson Distribution}
-$$P(x;\mu)=e^{-\mu}\frac{\mu^x}{x!}$$
-$$E(X)=Var(X)=\mu$$
-
-\clearpage
-This page is intentionally left blank to accommodate work that wouldn't fit elsewhere and/or scratch work.
+\section*{Section 1}
+\subsubsection*{ECC}
+$[1]$ Write the general form of an elliptic curve.\\
+\\
+$[2]$ Consider the following elliptic curve $y^2 = x^3 + 2x + 3\;(\text{mod} 5)$. 
+\begin{enumerate}
+    \item Find the number of points on the curve. List those points.
+    \item Find the order of the curve.
+    \item Find the generator of the curve.
+\end{enumerate}
 \end{document}
